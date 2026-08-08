@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eddy Currency</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <h1>💱 Eddy Currency</h1>
+      <p>Currency Converter</p>
+    </header>
+
+    <main class="card">
+      <label>Amount</label>
+      <input id="amount" type="number" value="100">
+
+      <label>From</label>
+      <select id="from">
+        <option value="USD">USD — US Dollar</option>
+        <option value="BIF">BIF — Burundian Franc</option>
+        <option value="AED">AED — UAE Dirham</option>
+        <option value="EUR">EUR — Euro</option>
+        <option value="GBP">GBP — British Pound</option>
+      </select>
+
+      <button id="swap">⇄ Swap</button>
+
+      <label>To</label>
+      <select id="to">
+        <option value="BIF">BIF — Burundian Franc</option>
+        <option value="USD">USD — US Dollar</option>
+        <option value="AED">AED — UAE Dirham</option>
+        <option value="EUR">EUR — Euro</option>
+        <option value="GBP">GBP — British Pound</option>
+      </select>
+
+      <button id="convert">CONVERT</button>
+
+      <div class="result">
+        <small>Result</small>
+        <h2 id="result">—</h2>
+        <p id="rate">Enter an amount and convert</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>Eddy Currency © 2026</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+          </html>
