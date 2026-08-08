@@ -55,3 +55,82 @@
   <script src="app.js"></script>
 </body>
           </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eddy Currency Wallet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header class="header">
+      <h1>👛 Eddy Wallet</h1>
+      <p>Your digital wallets</p>
+    </header>
+
+    <main>
+
+      <!-- BIF WALLET -->
+      <section class="wallet-card">
+        <div class="wallet-title">
+          <span>🇧🇮</span>
+          <div>
+            <h3>BIF Wallet</h3>
+            <p>Burundian Franc</p>
+          </div>
+        </div>
+
+        <h2 id="bifBalance">0 BIF</h2>
+
+        <div class="wallet-actions">
+          <button onclick="depositBIF()">Deposit</button>
+          <button onclick="sendBIF()">Send</button>
+        </div>
+      </section>
+
+
+      <!-- USDT WALLET -->
+      <section class="wallet-card">
+        <div class="wallet-title">
+          <span>₮</span>
+          <div>
+            <h3>USDT Wallet</h3>
+            <p>Tether USD</p>
+          </div>
+        </div>
+
+        <h2 id="usdtBalance">0 USDT</h2>
+
+        <div class="wallet-actions">
+          <button onclick="depositUSDT()">Deposit</button>
+          <button onclick="sendUSDT()">Send</button>
+        </div>
+      </section>
+
+
+      <!-- TRANSACTIONS -->
+      <section class="transactions">
+        <h3>📜 Transactions</h3>
+
+        <div id="transactionsList">
+          <p>No transactions yet.</p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Eddy Currency</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
